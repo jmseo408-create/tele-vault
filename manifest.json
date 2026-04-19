@@ -1,7 +1,7 @@
 {
   "id": "tele-vault",
   "name": "TeleVault",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "minAppVersion": "1.4.0",
   "description": "Embed Telegram Web inside Obsidian as a side panel using Electron webview.",
   "author": "TeleVault",

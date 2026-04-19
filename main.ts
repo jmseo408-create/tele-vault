@@ -67,8 +67,8 @@ class TeleVaultView extends ItemView {
       "webview" as keyof HTMLElementTagNameMap
     ) as HTMLElement;
 
-    webview.setAttribute("src", this.plugin.settings.telegramUrl);
     webview.setAttribute("partition", "persist:televault");
+    webview.setAttribute("src", this.plugin.settings.telegramUrl);
     webview.setAttribute("allowpopups", "true");
     webview.addClass("televault-webview");
 
