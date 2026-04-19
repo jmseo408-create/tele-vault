@@ -16,38 +16,13 @@ Obsidian 사이드 패널 안에서 Telegram Web 을 그대로 사용할 수 있
   - Obsidian 시작 시 자동으로 패널 열기
 - **데스크톱 전용**: `isDesktopOnly: true` 로 모바일에서는 비활성화 (Electron webview 가 모바일에서 동작하지 않음)
 
-## 설치 방법
+## 설치 방법 (BRAT)
 
-### 1. 저장소 클론
-
-```powershell
-cd C:\dev
-git clone https://github.com/<유저명>/tele-vault.git
-cd tele-vault
-```
-
-### 2. 빌드
-
-```powershell
-npm install
-npm run build
-```
-
-빌드가 끝나면 폴더에 `main.js` 파일이 생성됩니다.
-
-### 3. 볼트에 배포
-
-```powershell
-$dest = "G:\내 드라이브\Obsidian\Brain\.obsidian\plugins\tele-vault"
-New-Item -ItemType Directory -Force -Path $dest
-Copy-Item main.js, manifest.json, styles.css -Destination $dest
-```
-
-### 4. 활성화
-
-1. Obsidian 실행
-2. `설정` → `커뮤니티 플러그인` → `설치된 플러그인` 목록에서 **TeleVault** 토글 ON
-3. 리본에 나타난 종이비행기 아이콘 클릭 또는 `Ctrl+P` → `TeleVault: Telegram 패널 열기`
+1. Obsidian → `설정` → `커뮤니티 플러그인` → **BRAT** 설치 및 활성화
+2. BRAT 설정 → `Add Beta plugin`
+3. `jmseo408-create/tele-vault` 입력 → Add Plugin
+4. **TeleVault** 토글 ON
+5. 리본 아이콘 클릭 또는 `Ctrl+P` → `TeleVault: Telegram 패널 열기`
 
 ## 사용법
 
